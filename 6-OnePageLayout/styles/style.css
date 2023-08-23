@@ -1,0 +1,229 @@
+@import url(../webfonts/britanic/stylesheet.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1,
+h3 {
+    font-family: 'britannic_boldregular';
+}
+
+nav ul li,
+.button {
+    opacity: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+/*hover effect for button*/
+nav ul li:hover,
+.button:hover {
+    opacity: 30%;
+    transition: 0.2s ease-in-out;
+}
+
+p {
+    opacity: 80%;
+}
+
+
+header {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 111;
+}
+
+#header-box {
+    height: 75px;
+    width: 71%;
+    margin: auto;
+    line-height: 75px;
+
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    text-transform: uppercase;
+}
+
+header nav {
+    float: right;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 100px;
+    font-weight: bold;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/*-----banner-----*/
+#banner img {
+    width: 100%;
+    height: auto;
+}
+
+#content-text {
+    margin: 5%;
+    text-align: center;
+}
+
+#content-text h1 {
+    font-size: 60px;
+}
+
+#content-text h3 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+}
+
+#content-text a {
+    
+    margin-top: 25px;
+    
+}
+
+.button{
+    width: 80px;
+    margin: auto;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 32px;
+    text-transform: uppercase;
+    opacity: 100%;
+    font-weight: bold;
+}
+
+/*
+#content{
+    overflow: overlay;
+}
+
+#content img{
+    width: 25%;
+    height: auto;
+    float: left;
+    transition: 0.5s ease-in-out;
+}
+
+#content img:hover{
+    filter: grayscale(100%);
+    transition: 0.5s ease-in-out;
+}/*
+
+footer{
+    margin: 2%;
+    text-align: center;
+}
+
+
+/*add new here*/
+
+
+/*hero banner*/
+.hero {
+    background-image: url('../images/banner.jpg');
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn-primary {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+
+
+  /*image hover*/
+
+  #content{
+    overflow: overlay;
+}
+.image-container {
+    width: 25%;
+    height: auto;
+    float: left;
+    position: relative;
+}
+
+.image-container img {
+
+    width: 100%;
+    height: auto;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.333);
+}
+.image-container:hover .overlay {
+    opacity: 1;
+  }
+.image-container .overlay-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }

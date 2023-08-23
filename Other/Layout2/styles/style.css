@@ -1,0 +1,209 @@
+*{
+    margin: 0; 
+    padding: 0;
+ }
+ 
+ body{
+     margin: auto;      
+     
+ }
+ 
+ header{
+     background-color: white;
+     color: black;
+     position: fixed;
+     top:0;
+     width: 100%;
+     z-index: 1111111;
+     box-shadow: 1px solid;
+     border-bottom: 1px solid rgb(226, 226, 226);
+    
+ }
+ 
+ a{
+     text-decoration: none;
+     color: rgb(0, 0, 0);
+ }
+
+
+
+ /*hero banner*/
+ .hero-banner{
+    background-image: url('../images/3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    position: relative;
+    margin-top: 75px;
+}
+
+.hero-content{
+    color: aliceblue;
+    text-align: left;
+    position: absolute;
+    top: 76%;
+    left: 23%;
+    transform: translate(-23%,-75%);
+}
+
+.hero-content p{
+    margin-bottom: 30px;
+}
+
+.button{
+    width: 80px;
+    margin: auto;
+    padding: 10px;
+    border: 3px solid white;
+    color: white;
+    border-radius: 32px;
+    text-transform: uppercase;
+    opacity: 100%;
+    font-weight: bold;
+}
+
+ 
+ 
+ /*----------header------------*/
+ #header-box{
+     overflow: overlay;
+     width: 71%;
+     margin: auto;
+     line-height: 75px;
+ }
+ 
+ h1#logo-text{
+     float: left;
+ }
+ 
+ nav{
+     float: right;
+ }
+ 
+ nav ul li{
+     list-style-type: none;
+     display: inline;
+     margin-right: 30px;
+ }
+ 
+ nav ul li:last-child{
+     margin-right: 0px;
+ }
+
+
+ /*-----text-container-----*/
+ .text-container{
+    width: 71%;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    text-align: center;
+    
+ }
+
+
+ /*product-container*/
+
+.product-container{
+    overflow: overlay;
+    margin-top: 75px;
+}
+
+ .product-image{
+    float: left;
+    width: 50%;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+    height: 100vh
+ }
+
+
+  div::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+ .product-image img{
+    width: 100%;
+    height: auto;
+}
+ 
+
+ .product-text{
+    float: right;
+    width: 50%;
+ }
+ 
+
+ .product-text p {
+    width: 81%;
+    margin: auto;
+    margin-top: 38vh;
+}
+
+
+
+
+
+/*----3 col text-----*/
+.three-col-text-container{
+    display: flex;
+    margin: auto;
+    margin-top: 15vh;
+    width: 85%;
+  }
+
+.column {
+    flex: 1;
+    padding: 20px; /* Add padding as needed */
+    border: 1px solid #ccc; /* Just for visualization */
+}
+
+/*contact form*/
+.contact-container
+{
+    width: 86%;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    overflow: overlay;
+}
+.map{
+    float: left;
+    width: 50%;
+}
+
+.contact-box {
+    float: right;
+    width: 50%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+
+  @media (max-width: 768px) {
+    .three-col-text-container {
+      flex-direction: column; /* Display columns in a single column */
+    }
+  }

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 70%;
+    margin: auto;
+    background-color: #9ddbe1;
+}
+
+p{
+    padding: 2% 0;
+}
+
+header{
+    background-image: url(../images/cloud.png);
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#container{
+    background-image: url(../images/raindrop.png);
+    background-repeat: repeat-y;
+    background-position: 27%;
+    background-size: 15%;
+}
+
+#content{
+    width: 80%;
+    margin: auto;
+}
+
+footer{
+    background-image: url(../images/town.png);
+    height: 430px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+

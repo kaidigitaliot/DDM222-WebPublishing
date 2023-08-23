@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 71%;
+    margin: auto;
+}
+
+header{
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 2%;
+    text-decoration: none;
+}
+
+nav ul a li{
+    color: black;
+}
+
+nav ul a li:hover{
+    background-color: #582006;
+    color: white;
+}
+
+#page1, #page2, #page3{
+    background-color: antiquewhite;
+    padding: 1%;
+    margin: 1%;
+    overflow: hidden;
+}
+
+.page_content{
+    width: 50%;
+    float: left;
+    padding: 8% 5%;
+}
+
+.page_content h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+}
+
+.image{
+    width: 50%;
+    float: right;
+    padding: 2% 5% 0 0;
+}
+
+.image img{
+    width: 100%;
+    height: auto;
+}
+
+.page_content p{
+    padding: 5% 0;
+}
+.button{
+    background-color: #582006;
+    width: 120px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 1%;
+
+}
+
+.button:hover{
+    background-color: #854b30;
+}
+
+.button a{
+    text-decoration: none;
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+
+
+footer{
+    padding: 1%;
+}

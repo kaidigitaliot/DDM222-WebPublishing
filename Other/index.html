@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Yayoi Kusama</title>
+    <style>
+
+        @import url(webfont/britanic/stylesheet.css);
+        /* CSS Document */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /*width: 71%;*/
+            color: white;
+            margin: auto;
+            background-color: black;
+            font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+            text-align: center;
+        }
+
+        header {
+            color: white;
+            text-transform: uppercase;
+            height: 75px;
+            width: 71%;
+            margin: auto;
+        }
+
+        header h1{
+            float: left;
+            line-height: 75px; /*follow by the header line*/
+            font-family: "britannic_boldregular";
+        }
+
+        nav ul {
+           float: right;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline;
+            margin-right: 100px;
+        }
+    
+        nav ul li:last-child{
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            line-height: 75px;
+        }
+
+        nav ul li a:hover {
+            color: rgb(74, 74, 74);
+        }
+
+        #banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        #content-text {
+            color: white;
+            margin: 5%;
+        }
+
+        #content-text h1, #content-text h3 {
+            font-family: "britannic_boldregular";
+            
+        }
+
+        #content-text h1{
+            font-size: 108px;
+        }
+
+      
+
+        #content {
+            overflow: auto;
+            /*if I put the float left the height will missing*/
+
+            /*It's not because the floating divs doesn't have a height, it's because the floating divs don't affect the 
+            size of the parent element.
+            You can use the overflow style to make the parent element take the floating elements in consideration:*/
+        }
+
+        #content img {
+            width: 25%;
+            height: auto;
+            float: left;
+            transition: 0.5s ease-in-out;
+        }
+
+        #content img:hover {
+            -webkit-filter: grayscale(100%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+            transition: 0.5s ease-in-out;
+        }
+
+        footer {
+           
+            margin: 2%;
+        }
+
+        footer img:hover{
+            opacity: 80%;
+        }
+
+        @media(max-width:1000px) {
+            body {
+                width: 100%;
+            }
+
+            #content h1 {
+                font-size: 35px;
+                line-height: 40px;
+                padding: 3.5%;
+            }
+
+            #content img {
+                width: 50%;
+            }
+        }
+
+        @media(max-width:500px) {
+            header h1 {
+                font-size: 40px;
+            }
+
+            #content h1 {
+                font-size: 30px;
+            }
+
+            #content h2 {
+                padding: 3%;
+            }
+        }
+
+
+        /*#banner {
+        position: relative;
+        display: inline-block;
+        margin: 50px;
+        overflow: hidden;
+    }
+    #banner .img-top {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    #banner:hover .img-top {
+        opacity: 1;
+        transition-delay: 0.3s; /* Delay before the image change 
+    }
+    */
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div id="container">
+            <header>
+                <h1 id="logo-text">Yayoi Kusama</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#banner">Home</a></li>
+                        <li><a href="#content-text">About</a></li>
+                        <li><a href="#content">Work</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="banner">
+                <img src="images/banner.jpg" alt="banner" width="960" height="400" />
+            </div><!--the end of banner-->
+
+            <div id="content-text">
+                <h1>Yayoi Kusama</h1>
+                <h3>Japanese artist</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                </p>
+            </div><!--end of content-text-->
+
+            <div id="content">
+                <img src="images/artwork-01.jpg" width="240" height="240" alt="portfolio1" />
+                <img src="images/artwork-02.jpg" width="240" height="240" alt="portfolio2" />
+                <img src="images/artwork-03.jpg" width="240" height="240" alt="portfolio3" />
+                <img src="images/artwork-04.jpg" width="240" height="240" alt="portfolio4" />
+                <img src="images/artwork-05.jpg" width="240" height="240" alt="portfolio5" />
+                <img src="images/artwork-06.jpg" width="240" height="240" alt="portfolio6" />
+                <img src="images/artwork-07.jpg" width="240" height="240" alt="portfolio7" />
+                <img src="images/artwork-08.jpg" width="240" height="240" alt="portfolio8" />
+            </div><!--the end of content-->
+
+            <footer>
+                <div id="social-media-icon">
+                    <a href="https://www.facebook.com"><img src="images/fb.png" width="30" height="30" alt="facebook" /></a>
+                    <img src="images/ig.png" width="30" height="30" alt="instargam" />
+                    <img src="images/yt.png" width="30" height="30" alt="youtube" />
+
+                </div>
+                <p>Copyright &copy; 2023 Yayoi Kusama. All Rights Reserved.</p>
+            </footer>
+        </div><!--the end of container-->
+    </body>
+</body>
+
+</html>
