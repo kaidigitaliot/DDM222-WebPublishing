@@ -187,6 +187,8 @@ input[type=text],input[type=email],textarea{
 textarea{
     height: 170px;
     color:black;
+
+    
 }
 
 input[type=submit]{
@@ -205,8 +207,15 @@ input[type=submit]{
 
 
 
+
+
 @media (max-width:768px){
     .three-col-text-container{
         flex-direction: column; /*Display column in a signle column*/
     }
+
+
+
+
+    
 }
