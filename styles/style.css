@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*----set all <p> color----*/
+.text-container p, .product-text p, .three-col-text-container{
+    color: gray;
+}
+
+/*----set width and margin-----*/
+.header-box, .text-container, .three-col-text-container, .contact-container{
+    width: 85%;
+    margin: auto;
+}
+
+header a:hover{
+    color: gray;
+}
+
+/*-----header------*/
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 75px;
+}
+
+nav ul li:last-child{
+    margin-right: 0;
+}
+
+.header-box{
+    overflow: overlay;
+    margin: auto;
+    line-height: 40px;
+}
+
+
+
+h1#logo-text{
+    float: left;
+}
+
+nav{
+    float: right;
+}
+
+/*-------Hero-banner-------*/
+.hero-banner{
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-content{
+    position: absolute;
+    text-align: left;
+    top:77%;
+    left: 26%;
+    transform: translate(-26%,-77%);
+    color: white;
+}
+.hero-content p{
+    margin-bottom: 30px;
+}
+
+.button{
+    width: 100px;
+    margin: auto;
+    padding: 5px 25px;
+    color: white;
+    border:3px solid white;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/*-----text-container-----*/
+.text-container{
+    text-align: center;
+    margin: 10vh auto;
+}
+
+.text-container h1{
+    margin-bottom: 20px;
+    color: rgb(109, 109, 109);
+}
+
+
+/*-----product-container-------*/
+.product-container{
+    overflow: overlay;
+    
+}
+
+.product-container:active {
+    cursor: grabbing;
+}
+
+.product-image{
+    width: 50%;
+    float: left;
+    height: 100vh;
+    scrollbar-width: none; /*--for Firefox---*/
+    overflow-y: scroll;
+}
+
+.product-image::-webkit-scrollbar{
+    display: none;
+}
+
+.product-image img{
+    width: 100%;
+    height: auto;
+}
+
+.product-text{
+    width: 50%;
+    float: right;
+}
+
+.product-text p{
+    width: 81%;
+    margin: auto;
+    margin-top: 40vh;
+}
+
+
+/*-----three-col-text-container-----*/
+.three-col-text-container{
+    display: flex;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+}
+
+.column{
+    margin: 20px;
+}
+
+
+/*-----contact-container--------*/
+.contact-box{
+    margin-bottom: 10vh;
+}
+
+.map{
+    width: 50%;
+    float: left;
+}
+
+.map iframe{
+    width: 90%;
+}
+
+.contact-box{
+    width: 50%;
+    float: right;
+}
+
+
+input[type=text],input[type=email],textarea{
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: none;
+    background-color: #ececec;
+}
+
+
+textarea{
+    height: 170px;
+    color:black;
+
+    
+}
+
+input[type=submit]{
+    
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.full-map-container iframe{
+    width: 100%;
+}
+
+
+
+
+@media (max-width:768px){
+    .three-col-text-container{
+        flex-direction: column; /*Display column in a signle column*/
+    }
+}
