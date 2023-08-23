@@ -207,8 +207,15 @@ input[type=submit]{
 
 
 
+
+
 @media (max-width:768px){
     .three-col-text-container{
         flex-direction: column; /*Display column in a signle column*/
     }
+
+
+
+
+    
 }
